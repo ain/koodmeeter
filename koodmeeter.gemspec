@@ -7,11 +7,11 @@ require "koodmeeter/version"
 Gem::Specification.new do |s|
   s.name        = "koodmeeter"
   s.version     = Koodmeeter::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Koodmeeter."
-  s.description = "TODO: Description of Koodmeeter."
+  s.authors     = ["Ain Tohvri"]
+  s.email       = ["ain@flashbit.net"]
+  s.homepage    = "https://github.com/ain/koodmeeter"
+  s.summary     = "koodmeeter (codemeter) is a password strength score tool."
+  s.description = "koodmeeter is a port of koodmeeter.js password strength score tool."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
