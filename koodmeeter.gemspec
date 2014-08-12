@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "koodmeeter (codemeter) is a password strength score tool."
   s.description = "koodmeeter is a port of koodmeeter.js password strength score tool."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.19"
