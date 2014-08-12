@@ -1,0 +1,2 @@
+module Koodmeeter
+end
