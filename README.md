@@ -1,4 +1,4 @@
-# koodmeeter
+# koodmeeter [![Build Status](http://img.shields.io/travis/ain/koodmeeter.svg)](https://travis-ci.org/ain/koodmeeter)
 
 koodmeeter (codemeter) is a password strength score tool.
 
