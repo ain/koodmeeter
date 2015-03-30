@@ -1,24 +1,41 @@
 require 'spec_helper'
 
 describe Koodmeeter do
-  it "expect to throw error without parameter" do
-    expect{Koodmeeter.test}.to raise_error(ArgumentError)
+  describe '.test' do
+    context 'without password' do
+      it { expect{ Koodmeeter.test }.to raise_error(ArgumentError) }
+    end
+    context 'with numeric password' do
+      it { expect{ Koodmeeter.test(21233) }.to_not raise_error }
+    end
+    context 'with blacklisted password' do
+      subject { Koodmeeter.test('123456') }
+      it { is_expected.to eql 0 }
+
+      subject { Koodmeeter.test('qwerty') }
+      it { is_expected.to eql 0 }
+
+      subject { Koodmeeter.test('lovely') }
+      it { is_expected.to eql 0 }
+
+      subject { Koodmeeter.test('password') }
+      it { is_expected.to eql 0 }
+
+      subject { Koodmeeter.test('welcome') }
+      it { is_expected.to eql 0 }
+    end
+    context 'with blacklisted password fed as number' do
+      subject { Koodmeeter.test(123456) }
+      it { is_expected.to eql 0 }
+
+      subject { Koodmeeter.test(12345) }
+      it { is_expected.to eql 0 }
+    end
   end
-  it "expect to not to throw error on numeric parameter" do
-    expect{Koodmeeter.test(21233)}.not_to raise_error
+
+  describe '.blacklist' do
+    subject { Koodmeeter.blacklist }
+    it { is_expected.to be_a Array }
   end
-  it "expect to return blacklist dictionary" do
-    expect(Koodmeeter.blacklist).to be_an_instance_of(Array)
-  end
-  it "expect to return 0 on blacklisted password" do
-    expect(Koodmeeter.test('123456')).to eql(0)
-    expect(Koodmeeter.test('qwerty')).to eql(0)
-    expect(Koodmeeter.test('lovely')).to eql(0)
-    expect(Koodmeeter.test('password')).to eql(0)
-    expect(Koodmeeter.test('welcome')).to eql(0)
-  end
-  it "expect to return 0 on blacklisted password fed as number" do
-    expect(Koodmeeter.test(123456)).to eql(0)
-    expect(Koodmeeter.test(12345)).to eql(0)
-  end
+
 end
