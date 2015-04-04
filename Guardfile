@@ -3,5 +3,5 @@ guard :rspec, cmd: 'rspec' do
   watch(%r{^lib/koodmeeter/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
   watch('spec/spec_helper.rb')  { "spec" }
   #watch('data/(.+)\.json')  { "spec" }
-  watch(%r{^data/.+\.json$})
+  watch(%r{^data/.+\.json$}) { "spec" }
 end
