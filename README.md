@@ -6,4 +6,4 @@ This repository is a placeholder for koodmeeter Ruby gem, currently __work in pr
 
 ## License
 
-Copyright © 2014 Ain Tohvri. Licensed under [GPLv3](LICENSE).
+Copyright © 2015 Ain Tohvri. Licensed under [GPLv3](LICENSE).
