@@ -13,11 +13,40 @@ describe Koodmeeter::Axiom do
 
     context Koodmeeter::Axiom.list.first do
       it { is_expected.to be_a Hash }
-    end
-
-    context Koodmeeter::Axiom.list.first do
       it { is_expected.to have_key :regex }
       it { is_expected.to have_key :score }
+    end
+
+    context Koodmeeter::Axiom.list.first[:score] do
+      it { is_expected.to eql 1 }
+    end
+
+    context Koodmeeter::Axiom.list[1][:score] do
+      it { is_expected.to eql 5 }
+    end
+
+    context Koodmeeter::Axiom.list[2][:score] do
+      it { is_expected.to eql 2 }
+    end
+
+    context Koodmeeter::Axiom.list[3][:score] do
+      it { is_expected.to eql 7 }
+    end
+
+    context Koodmeeter::Axiom.list[4][:score] do
+      it { is_expected.to eql 5 }
+    end
+
+    context Koodmeeter::Axiom.list[5][:score] do
+      it { is_expected.to eql 7 }
+    end
+
+    context Koodmeeter::Axiom.list[6][:score] do
+      it { is_expected.to eql 3 }
+    end
+
+    context Koodmeeter::Axiom.list[7][:score] do
+      it { is_expected.to eql 2 }
     end
   end
 
