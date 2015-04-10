@@ -5,7 +5,7 @@ module Koodmeeter
 
   @@scores = [10, 15, 25, 45]
 
-  def self.test(password)
+  def self.check(password)
     password = password.to_s
 
     raise ArgumentError.new 'Password argument required!' if password.nil?
