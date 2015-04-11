@@ -18,6 +18,25 @@ Optionally, minimum chars option can be used, affecting score:
 Koodmeeter.check('mypassword', 12)
 ```
 
+## Contributing
+
+### Bug reports, suggestions
+
+- File all your issues, feature requests [here](https://github.com/ain/koodmeeter/issues)
+- If filing a bug report, follow the convention of [How to report a bug?](https://github.com/interactive-pioneers/conventions/blob/master/Bugtracking.md#how-to-report-a-bug)
+- __If you're a developer__ instead of a bug report, __write a failing
+  test instead of a bug report__.
+
+### Code
+
+1. Fork it ( https://github.com/[my-github-username]/koodmeeter/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Develop your feature by concepts of [TDD](http://en.wikipedia.org/wiki/Test-driven_development). Run `guard` in parallel to automatically run your tests
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
+
 ## License
 
 Copyright © 2015 Ain Tohvri. Licensed under [GPLv3](LICENSE).
