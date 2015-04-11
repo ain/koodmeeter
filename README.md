@@ -2,7 +2,21 @@
 
 koodmeeter (codemeter) is a password strength score tool.
 
-This repository is a placeholder for koodmeeter Ruby gem, currently __work in progress__.
+## Usage
+
+``` ruby
+# Returns number representing password strength score:
+#   0 - lowest
+#   5 - highest
+Koodmeeter.check('mypassword')
+```
+
+Optionally, minimum chars option can be used, affecting score:
+
+``` ruby
+# Returns 0, since "mypassword" is less than 12 chars
+Koodmeeter.check('mypassword', 12)
+```
 
 ## License
 
