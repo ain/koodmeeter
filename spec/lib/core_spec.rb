@@ -55,6 +55,14 @@ describe Koodmeeter do
       subject { Koodmeeter.check('asdf112-$55') }
       it { is_expected.to eql 5 }
     end
+    context 'with 8 minimum chars, 4 lowercase letters followed by 3 numbers, a dash, a dollar and 2 numbers' do
+      subject { Koodmeeter.check('asdf112-$55', 8) }
+      it { is_expected.to eql 4 }
+    end
+    context 'with 12 minimum chars, 4 lowercase letters followed by 3 numbers, a dash, a dollar and 2 numbers' do
+      subject { Koodmeeter.check('asdf112-$55', 12) }
+      it { is_expected.to eql 0 }
+    end
   end
 
   describe '.blacklist' do

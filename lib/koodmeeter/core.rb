@@ -1,20 +1,20 @@
 module Koodmeeter
 
   LEVELS = (0..5).to_a
-  MIN_CHARS = 6
+  DEFAULT_MIN_CHARS = 6
 
   @@scores = [10, 15, 25, 45]
 
   class << self
 
-    def check(password)
+    def check(password, minimum_chars = DEFAULT_MIN_CHARS)
       password = password.to_s
 
       raise ArgumentError.new 'Password argument required!' if password.nil?
       return 0 unless blacklist.index(password).nil?
 
       length = password.length
-      diff = length - MIN_CHARS
+      diff = length - minimum_chars
       scores_dupe = @@scores.dup
       score = calculate_diff_increment(diff)
 
