@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     koodmeeter (0.0.2)
-      json (~> 1.8.2)
+      json (~> 1.8)
 
 GEM
   remote: https://rubygems.org/
@@ -103,10 +103,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  coveralls (~> 0.8.0)
-  guard (~> 2.12.5)
-  guard-rspec (~> 4.5.0)
+  coveralls (~> 0.8)
+  guard (~> 2.12)
+  guard-rspec (~> 4.5)
   koodmeeter!
-  rake (~> 10.4.2)
-  rspec (~> 3.2.0)
-  rspec-nc (~> 0.2.0)
+  rake (~> 10.4)
+  rspec (~> 3.2)
+  rspec-nc (~> 0.2)
