@@ -20,12 +20,12 @@ Gem::Specification.new do |s|
   s.test_files    = s.files.grep(%r{^spec/})
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "json", "~> 1.8.2"
+  s.add_runtime_dependency "json", "~> 1.8"
 
-  s.add_development_dependency "rake", "~> 10.4.2"
-  s.add_development_dependency "rspec", "~> 3.2.0"
-  s.add_development_dependency "rspec-nc", "~> 0.2.0"
-  s.add_development_dependency "guard", "~> 2.12.5"
-  s.add_development_dependency "guard-rspec", "~> 4.5.0"
-  s.add_development_dependency "coveralls", "~> 0.8.0"
+  s.add_development_dependency "rake", "~> 10.4"
+  s.add_development_dependency "rspec", "~> 3.2"
+  s.add_development_dependency "rspec-nc", "~> 0.2"
+  s.add_development_dependency "guard", "~> 2.12"
+  s.add_development_dependency "guard-rspec", "~> 4.5"
+  s.add_development_dependency "coveralls", "~> 0.8"
 end
