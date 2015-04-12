@@ -36,11 +36,16 @@ module Koodmeeter
     end
 
     def blacklist
-      file = File.read('data/blacklist.json')
+      path = File.join root, 'data/blacklist.json'
+      file = File.read path
       JSON.parse(file)['blacklist']
     end
 
     private
+
+    def root
+      File.expand_path '../../..', __FILE__
+    end
 
     def calculate_diff_increment(diff)
       score = 0;
