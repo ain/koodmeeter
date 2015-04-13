@@ -2,6 +2,8 @@
 
 koodmeeter (codemeter) is a password strength score tool.
 
+If you need just a JavaScript version, check [koodmeeter.js](https://github.com/ain/koodmeeter.js).
+
 ## Usage
 
 ``` ruby
