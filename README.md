@@ -1,4 +1,4 @@
-# koodmeeter [![Build Status](http://img.shields.io/travis/ain/koodmeeter.svg)](https://travis-ci.org/ain/koodmeeter) [![Gem Version](https://badge.fury.io/rb/koodmeeter.svg)](http://badge.fury.io/rb/koodmeeter)
+# koodmeeter [![Build Status](http://img.shields.io/travis/ain/koodmeeter.svg)](https://travis-ci.org/ain/koodmeeter) [![Gem Version](https://badge.fury.io/rb/koodmeeter.svg)](http://badge.fury.io/rb/koodmeeter) [![Coverage Status](https://coveralls.io/repos/ain/koodmeeter/badge.svg)](https://coveralls.io/r/ain/koodmeeter)
 
 koodmeeter (codemeter) is a password strength score tool.
 
