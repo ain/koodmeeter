@@ -2,12 +2,12 @@
 
 koodmeeter (codemeter) is a password strength score tool.
 
-If you need just a JavaScript version, check [koodmeeter.js](https://github.com/ain/koodmeeter.js).
-
 - Supported Ruby versions:
   - 2.2.1 (recommended)
   - 2.1.0
   - 2.0.0
+
+If you need just a JavaScript version, check [koodmeeter.js](https://github.com/ain/koodmeeter.js).
 
 ## Usage
 
