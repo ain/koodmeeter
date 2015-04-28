@@ -3,8 +3,8 @@
 koodmeeter (codemeter) is a password strength score tool.
 
 - Supported Ruby versions:
-  - 2.2.2
-  - 2.2.1 (recommended)
+  - 2.2.2 (recommended)
+  - 2.2.1
   - 2.1.0
   - 2.0.0
 
