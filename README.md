@@ -30,7 +30,7 @@ Koodmeeter.check('mypassword', 12)
 ### Bug reports, suggestions
 
 - File all your issues, feature requests [here](https://github.com/ain/koodmeeter/issues)
-- If filing a bug report, follow the convention of [How to report a bug?](https://github.com/interactive-pioneers/conventions/blob/master/Bugtracking.md#how-to-report-a-bug)
+- If filing a bug report, follow the convention of _Steps to reproduce_ / _What happens?_ / _What should happen?_<!--[How to report a bug?](https://github.com/interactive-pioneers/conventions/blob/master/Bugtracking.md#how-to-report-a-bug) -->
 - __If you're a developer, write a failing test instead of a bug report__ and send a Pull Request
 
 ### Code
