@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency "json", "~> 1.8"
 
-  s.add_development_dependency "rake", "~> 10.4"
+  s.add_development_dependency "rake", "~> 12.3"
   s.add_development_dependency "rspec", "~> 3.2"
   s.add_development_dependency "rspec-nc", "~> 0.2"
   s.add_development_dependency "guard", "~> 2.12"
